@@ -3,12 +3,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DaftarFilm">
+    tools:context=".DaftarFilm"
+    >
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fragment_daftar_film_margin"
+        android:layout_marginRight="@dimen/fragment_daftar_film_margin"
+        android:layout_marginTop="20dp"
+        android:text="@string/hello_blank_fragment"
+        android:textSize="@dimen/title_text"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fragment_daftar_film_margin"
+        android:layout_marginRight="@dimen/fragment_daftar_film_margin"
+        android:layout_marginTop="70dp"
+        android:text="Ini Subtitle"
+        android:textSize="@dimen/sub_title_text"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fragment_daftar_film_margin"
+        android:layout_marginRight="@dimen/fragment_daftar_film_margin"
+        android:layout_marginTop="120dp"
+        android:text="Ini Descroption"
+        android:textSize="@dimen/description_text"
+        />
+
+    <ListView
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_marginLeft="@dimen/fragment_daftar_film_margin"
+        android:layout_marginRight="@dimen/fragment_daftar_film_margin"
+        android:layout_marginTop="@dimen/fragment_daftar_film_margin"
+        />
 
 </FrameLayout>

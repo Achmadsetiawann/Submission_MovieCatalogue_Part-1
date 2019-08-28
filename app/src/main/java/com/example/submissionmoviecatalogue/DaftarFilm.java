@@ -28,4 +28,7 @@ public class DaftarFilm extends Fragment {
         return inflater.inflate(R.layout.fragment_daftar_film, container, false);
     }
 
+
+
+
 }
