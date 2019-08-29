@@ -8,6 +8,6 @@
 
 
     <!--Setting dimen fragment_daftar_film-->
-    <dimen name="fragment_daftar_film_margin">16dp</dimen>
+    <dimen name="fragment_listview_film_margin">16dp</dimen>
 
 </resources>
