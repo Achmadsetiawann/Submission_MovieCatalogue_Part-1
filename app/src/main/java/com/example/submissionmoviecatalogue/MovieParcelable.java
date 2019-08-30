@@ -7,8 +7,9 @@ public class MovieParcelable implements Parcelable {
 
     /* Deklarasi Data yg di butuhkan */
 
-    private String img_movie;
+    private int img_movie;
     private String title_movie;
+    private String overview_movie;
     private String gendre_movie;
     private String runtime_movie;
     private String budget_movie;
@@ -18,11 +19,11 @@ public class MovieParcelable implements Parcelable {
 
     /* Set Data Construct sesuai dengan variable di atas  */
 
-    public String getImg_movie() {
+    public int getImg_movie() {
         return img_movie;
     }
 
-    public void setImg_movie(String img_movie) {
+    public void setImg_movie(int img_movie) {
         this.img_movie = img_movie;
     }
 
@@ -33,6 +34,16 @@ public class MovieParcelable implements Parcelable {
     public void setTitle_movie(String title_movie) {
         this.title_movie = title_movie;
     }
+
+
+    public String getOverview_movie() {
+        return overview_movie;
+    }
+
+    public void setOverview_movie(String overview_movie) {
+        this.overview_movie = overview_movie;
+    }
+
 
     public String getGendre_movie() {
         return gendre_movie;
@@ -83,8 +94,9 @@ public class MovieParcelable implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-        dest.writeString(this.img_movie);
+        dest.writeInt(this.img_movie);
         dest.writeString(this.title_movie);
+        dest.writeString(this.overview_movie);
         dest.writeString(this.gendre_movie);
         dest.writeString(this.runtime_movie);
         dest.writeString(this.budget_movie);
@@ -97,8 +109,9 @@ public class MovieParcelable implements Parcelable {
     }
 
     protected MovieParcelable(Parcel in) {
-        this.img_movie = in.readString();
+        this.img_movie = in.readInt();
         this.title_movie = in.readString();
+        this.overview_movie = in.readString();
         this.gendre_movie = in.readString();
         this.runtime_movie = in.readString();
         this.budget_movie = in.readString();

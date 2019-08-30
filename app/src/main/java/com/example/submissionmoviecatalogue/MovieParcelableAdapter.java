@@ -1,51 +1,90 @@
 package com.example.submissionmoviecatalogue;
 
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+
 import java.util.ArrayList;
 
-public class MovieParcelableAdapter {
+public class MovieParcelableAdapter extends BaseAdapter {
 
-    public static String[][] data = new String[][]{
-            {
-                "E:\\Workspace\\Andriod\\SubmissionMovieCatalogue\\app\\src\\main\\res\\mipmap-hdpi\\poster_a_star.jpg",
-                "Fast & Furious Presents: Hobbs & Shaw",
-                "ACTION",
-                "2 Hours 16 Minute",
-                "200,000,000.00",
-                "588,759,740.00",
-                "Written by msbreviews on August 5, 2019\n" +
-                        "If you enjoy reading my Spoiler-Free reviews, please follow my blog :)\n" +
-                        "\n" +
-                        "Here’s the thing about the Fast & Furious franchise: it can be dumb fun. Every movie has the right to be entertaining even if it completely disregards physics and logic… As long as it establishes its tone from the start. You can’t make an action film where the main characters survive basically everything they shouldn’t and take everything seriously. It’s not that you can’t have that mix of tones (Furious 7 did it brilliantly), but that’s reserved for some of the best movies of the year since it’s not easy (at all) to bala... read the rest."
-            },
+    private final Context context;
+    private ArrayList<MovieParcelable> movieParcelableArrayList;
 
+    public void setMovieParcelableArrayList(ArrayList<MovieParcelable> movieParcelableArrayList) {
+        this.movieParcelableArrayList = movieParcelableArrayList;
+    }
 
-            /*{" ", " ", " "},*/
-    };
+    public MovieParcelableAdapter(Context context) {
+        this.context = context;
+        movieParcelableArrayList = new ArrayList<>();
+    }
 
+    @Override
+    public int getCount() {
+        return movieParcelableArrayList.size();
+    }
 
-    /* Fungsi API Arraylist<GalerriData> */
+    @Override
+    public Object getItem(int i) {
+        return movieParcelableArrayList.get(i);
+    }
 
-    public static ArrayList<MovieParcelable> getListData() {
-        ArrayList<MovieParcelable> list = new ArrayList<>();
-        for (String[] aData : data) {
-            MovieParcelable movieParcelable = new MovieParcelable();
-            movieParcelable.setImg_movie(aData[0]);
-            movieParcelable.setTitle_movie(aData[1]);
-            movieParcelable.setGendre_movie(aData[2]);
-            movieParcelable.setRuntime_movie(aData[3]);
-            movieParcelable.setBudget_movie(aData[4]);
-            movieParcelable.setRevenue_movie(aData[5]);
-            movieParcelable.setReview_movie(aData[6]);
+    @Override
+    public long getItemId(int i) {
+        return i;
+    }
 
-            list.add(movieParcelable);
+    @Override
+    public View getView(int i, View view, ViewGroup viewGroup) {
+        if (view == null) {
+            view = LayoutInflater.from(context).inflate(R.layout.detail_film, viewGroup, false);
         }
 
-        return list;
+        ViewHolder viewHolder = new ViewHolder(view);
+        MovieParcelable movieParcelableArrayList = (MovieParcelable) getItem(i);
+        viewHolder.bind(movieParcelableArrayList);
+        return view;
+    }
+
+    private class ViewHolder {
+        private ImageView viewholderImg;
+        private TextView viewholderTitle, viewholderOverview, viewholderGendre, viewholderRuntime, viewholderBudget, viewholderRevenue, viewholderReview;
+
+        ViewHolder(View view) {
+            viewholderImg = view.findViewById(R.id.img_movie);
+            viewholderTitle = view.findViewById(R.id.title_movie);
+            viewholderOverview = view.findViewById(R.id.overview_movie);
+            viewholderGendre = view.findViewById(R.id.gendre_movie);
+            viewholderRuntime = view.findViewById(R.id.runtime_movie);
+            viewholderBudget = view.findViewById(R.id.budget_movie);
+            viewholderRevenue = view.findViewById(R.id.revenue_movie);
+            viewholderReview = view.findViewById(R.id.review_movie);
+        }
+
+        void bind(MovieParcelable movieParcelable) {
+
+            viewholderImg.setImageResource(movieParcelable.getImg_movie());
+            viewholderTitle.setText(movieParcelable.getTitle_movie());
+            viewholderOverview.setText(movieParcelable.getOverview_movie());
+            viewholderGendre.setText(movieParcelable.getGendre_movie());
+            viewholderRuntime.setText(movieParcelable.getRuntime_movie());
+            viewholderBudget.setText(movieParcelable.getBudget_movie());
+            viewholderRevenue.setText(movieParcelable.getRevenue_movie());
+            viewholderReview.setText(movieParcelable.getReview_movie());
+
+        }
+
     }
 
 
-
 }
+
 
 
 /*

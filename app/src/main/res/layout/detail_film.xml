@@ -3,18 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailFilm">
+    tools:context=".DetailMovie">
 
 
     <ImageView
-        android:id="@+id/img_detail_movie"
+        android:id="@+id/img_movie"
         android:layout_width="100dp"
         android:layout_height="160dp"
         android:scaleType="fitXY"
         />
 
     <TextView
-        android:id="@+id/fdetail_title_movie"
+        android:id="@+id/title_movie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/fragment_listview_film_margin"
@@ -25,7 +25,7 @@
         />
 
     <TextView
-        android:id="@+id/fdetail_runtime_movie"
+        android:id="@+id/overview_movie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/fragment_listview_film_margin"
@@ -36,7 +36,7 @@
         />
 
     <TextView
-        android:id="@+id/fdetail_overview_movie"
+        android:id="@+id/gendre_movie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/fragment_listview_film_margin"
@@ -47,5 +47,63 @@
         android:maxLines="3"
         />
 
+    <TextView
+        android:id="@+id/runtime_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/fragment_listview_film_margin"
+        android:layout_toEndOf="@+id/img_detail_movie"
+        android:layout_marginTop="80dp"
+        android:text="@string/hello_blank_fragment"
+        android:textSize="@dimen/sub_title_text"
+        android:maxLines="3"
+        />
+
+    <TextView
+        android:id="@+id/budget_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/fragment_listview_film_margin"
+        android:layout_toEndOf="@+id/img_detail_movie"
+        android:layout_marginTop="80dp"
+        android:text="@string/hello_blank_fragment"
+        android:textSize="@dimen/sub_title_text"
+        android:maxLines="3"
+        />
+
+    <TextView
+        android:id="@+id/revenue_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/fragment_listview_film_margin"
+        android:layout_toEndOf="@+id/img_detail_movie"
+        android:layout_marginTop="80dp"
+        android:text="@string/hello_blank_fragment"
+        android:textSize="@dimen/sub_title_text"
+        android:maxLines="3"
+        />
+
+    <TextView
+        android:id="@+id/review_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/fragment_listview_film_margin"
+        android:layout_toEndOf="@+id/img_detail_movie"
+        android:layout_marginTop="80dp"
+        android:text="@string/hello_blank_fragment"
+        android:textSize="@dimen/sub_title_text"
+        android:maxLines="3"
+        />
 
 </RelativeLayout >
+
+
+<!--
+    this.img_movie = in.readString();
+    this.title_movie = in.readString();
+    this.overview_movie = in.readString();
+    this.gendre_movie = in.readString();
+    this.runtime_movie = in.readString();
+    this.budget_movie = in.readString();
+    this.revenue_movie = in.readString();
+    this.review_movie = in.readString(); -->
