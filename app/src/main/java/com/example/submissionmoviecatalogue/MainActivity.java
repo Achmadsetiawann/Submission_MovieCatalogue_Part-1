@@ -10,7 +10,10 @@ public class MainActivity extends AppCompatActivity {
 
 /*
 
-Structure MainActivity =>  fragment_daftar_film.xml => DaftarFilm.java
+Structure
+
+MainActivity =>  activity_main.xml => DaftarFilm.java
+MovieParcelable => MovieParcelableAdapter
 
 
 */
@@ -20,9 +23,9 @@ Structure MainActivity =>  fragment_daftar_film.xml => DaftarFilm.java
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_daftar_film);
+        setContentView(R.layout.activity_main);
 
-        ListView listView = findViewById(R.id.lv_dasboard_film);
+        ListView listView = findViewById(R.id.lv_daftar_film);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, android.R.id.text1, dataName);
         listView.setAdapter(adapter);
