@@ -4,10 +4,6 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    this.budget_movie = in.readString();
-    this.revenue_movie = in.readString();
-    this.review_movie = in.readString();
-
     <array name="data_img_movie">
         <item>@drawable/poster_a_star</item>
         <item>@drawable/poster_aquaman</item>
@@ -124,6 +120,75 @@
         <item>1H 57M</item>
         <item>1H 57M</item>
         <item>1H 52M</item>
+    </string-array>
+
+    <string-array name="data_budget_movie">
+        <item>$36,000,000.00</item>
+        <item>$160,000,000.00</item>
+        <item>$300,000,000.00</item>
+        <item>$19,800,000.00</item>
+        <item>$52,000,000.00</item>
+        <item>$135,000,000.00</item>
+        <item>$50,000,000.00</item>
+        <item>$110,000,000.00</item>
+        <item>$129,000,000.00</item>
+        <item>$0</item>
+        <item>$20,000,000.00</item>
+        <item>$0</item>
+        <item>$130,000,000.00</item>
+        <item>$100,000,000.00</item>
+        <item>$0</item>
+        <item>$100,000,000.00</item>
+        <item>$160,000,000.00</item>
+        <item>$43,000,000.00</item>
+        <item>$50,000,000.00</item>
+        <item>$116,000,000.00</item>
+    </string-array>
+
+    <string-array name="data_revenue_movie">
+        <item>$433,888,866.00</item>
+        <item>$1,143,689,193.00</item>
+        <item>$2,046,239,637.00</item>
+        <item>$0</item>
+        <item>$894,027,543.00</item>
+        <item>$465,895,025.00</item>
+        <item>$137,944,327.00</item>
+        <item>$741,547,413.00</item>
+        <item>$517,526,875.00</item>
+        <item>$0</item>
+        <item>$246,941,965.00</item>
+        <item>$0</item>
+        <item>$348,807,090.00</item>
+        <item>$104,236,467.00</item>
+        <item>$0</item>
+        <item>$73,260,114.00</item>
+        <item>$1,098,920,975.00</item>
+        <item>$17,894,345.00</item>
+        <item>$171,304,407.00</item>
+        <item>$855,013,954.00</item>
+    </string-array>
+
+    <string-array name="data_review_movie">
+        <item>Written by Gimly on February 19, 2019, Lady Gaga clearly is (and has been for a very long time) a fantastic singer, and has made massive strides as an actor as well, but I really did not enjoy this. Bradley Cooper has clearly been studying at the Jeff Bridges' School of Being Completely Fucking Incomprehensible for this one. Maybe he was just trying to lend some believebility to the idea that he and Sam Elliot were brothers, I don't know (If that is the case, it failed miserably). Which I mean, whatever, it's his movie, he do that character whichever way he wants, but I don't appreciate it myself. Honestly the only thing in t... read the rest.</item>
+        <item>Written by Per Gunnar Jonsson on January 3, 2019, I just came back home from watching Aquaman on the IMAX theater in Balexert in Geneva and thought that I should write something up while it’s still fresh in my mind. Something that happens all too rarely.</item>
+        <item>Written by jmquint00 on May 22, 2018, Best Movie Ever...</item>
+        <item>Written by Gimly on January 20, 2019, Kind of a The Happening meets A Quiet Place, but better than the latter and way better than the former. Maybe I didn't get eeeeeeverything I wanted out of Bird Box but I'm still on board. I know that I opened this up by saying the movie is very much like two other movies, but what I liked most about is honestly that it's unlike 99.99% of the horror genre, and that little variation was just what I needed today.</item>
+        <item>Written by Richard_a_Kirk on February 2, 2019, Bohemian Rhapsody is not a biography of Freddie Mercury, nor a biopic of Queen. It's a story based on a selection of key events occurring between the formation of the band and their appearance at Live Aid. As a Queen fan I found this film utterly engrossing and enjoyable. </item>
+        <item>Written by TriggerZ on April 12, 2019, Decent, by the numbers, popcorn movie. Better than the other live action Transformers movie, but still not very good. Best parts were the fight scenes, especially on Cybertron. Otherwise, it was average, 5/10.</item>
+        <item>Written by Stephen Campbell on June 29, 2019, Decent enough, but adheres far too rigidly to the Rocky template I have not met one person who didn't like a Rocky movie.</item>
+        <item>Written by Per Gunnar Jonsson on October 21, 2018, I have to say that I quite enjoyed this movie. Was there a lot of juvenile jokes? Oh yes. Was the characters sometimes over the top and silly? Yes again. </item>
+        <item>Written by Del29 on February 5, 2019, i got the pleasure of getting a sneak peek of this movie its pretty great i laughed out loud and really had feelings for the characters in this movie its a good choice for older kids i dont think however its a good idea for younger kids its more dark the villans more frightening then before the movie is good very good though</item>
+        <item>We don't have any reviews for Dragon Ball Z: Broly – The Legendary Super Saiyan.</item>
+        <item>Written by esam.mosbah on February 3, 2019 It's a very good movie</item>
+        <item>Written by thecrustycurmudgeon on January 16, 2019, So much potential, but still a disappointment If you have nothing else to do and need to fill some time, this is an okay respite. But, don't expect anything more than a standard military action movie with cliched dialogue, unreasonable scenarios, and mediocre acting.</item>
+        <item>Written by Per Gunnar Jonsson on May 27, 2019, The original Mary Poppins was one of my favorite movies when I was a kid and it kind of still is. Thus I was indeed a bit worried when I sat down to watch this one with the kids yesterday. After all there is really so many ways a incompetent writer could have screwed this one up. Especially one with an agenda.</item>
+        <item>Written by Per Gunnar Jonsson on April 19, 2019, I have to say that I liked this movie a lot. It is kind of fantasy, science fiction (emphasis on fiction here) and steam punk (or perhaps I should say diesel punk) mixed together.</item>
+        <item>We don't have enough data to suggest any movies based on Retired Thug. You can help by rating movies you've seen.</item>
+        <item>Written by Gimly on July 17, 2019, I just feel kinda bad for everyone involved. It was clear that whatever was supposed to happen, was tried at. Very hard. But it did not work.</item>
+        <item>Written by Per Gunnar Jonsson on July 21, 2019, I just came home with the kids from the cinema where we had watched Spider-Man: Far From Home so I thought I would write a few lines while it was still fresh in my mind.</item>
+        <item>Written by thecrustycurmudgeon on January 17, 2019, While I enjoyed this film, it was a bit of a disappointment compared to the others in this series. As noted by other reviews, the film is haunted by an incredibly poor script. On the other hand, the action is pretty good if you can tolerate the long, poorly scripted scenes in between.</item>
+        <item>Written by Stephen Campbell on July 12, 2019, Laconic, measured and easy to digest, although it could have done with more substance</item>
+        <item>Written by Per Gunnar Jonsson on February 22, 2019, It’s school holidays here in France which means the kids are at my place which in turn means lot’s of time in front of the screen. Last night it was Venom’s turn to be plopped into my Blu-ray player.</item>
     </string-array>
 
 </resources>
