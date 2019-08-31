@@ -14,15 +14,13 @@ import java.util.ArrayList;
 import static android.os.Looper.prepare;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
 
 /*
 Structure
 
 MovieParcelable.java => MovieParcelableAdapter.java
 MainActivity.java => activity_main.xml => MovieParelableAdapter.java => DetailMovie.java
-
-
 
 */
 
@@ -55,9 +53,10 @@ MainActivity.java => activity_main.xml => MovieParelableAdapter.java => DetailMo
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(MainActivity.this, movieParcelableArrayList.get(i).getName(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, movieParcelableArrayList.get(i).getTitle_movie(), Toast.LENGTH_SHORT).show();
             }
         });
+    }
 
         private void prepare() {
 
@@ -77,6 +76,7 @@ MainActivity.java => activity_main.xml => MovieParelableAdapter.java => DetailMo
 
             for (int i = 0; i < dataTitleMovie.length; i++) {
                 MovieParcelable movieParcelable = new MovieParcelable();
+
                 movieParcelable.setImg_movie(dataImgMovie.getResourceId(i, -1));
                 movieParcelable.setTitle_movie(dataTitleMovie[i]);
                 movieParcelable.setOverview_movie(dataOverviewMovie[i]);
@@ -94,10 +94,7 @@ MainActivity.java => activity_main.xml => MovieParelableAdapter.java => DetailMo
         }
 
 
-    }
-
 }
-
 
 
 
