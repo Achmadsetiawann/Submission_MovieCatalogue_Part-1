@@ -9,9 +9,9 @@
         android:id="@+id/lv_daftar_film"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="@dimen/fragment_listview_film_margin"
-        android:layout_marginRight="@dimen/fragment_listview_film_margin"
-        android:layout_marginTop="@dimen/fragment_listview_film_margin"
+        android:layout_marginLeft="@dimen/listview_film_margin"
+        android:layout_marginRight="@dimen/listview_film_margin"
+        android:layout_marginTop="@dimen/listview_margin_top"
         />
 
 </LinearLayout>

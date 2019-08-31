@@ -2,12 +2,15 @@
 <resources>
 
     <!--Setting dimen Typography Text-->
-    <dimen name="title_text">30sp</dimen>
-    <dimen name="sub_title_text">26sp</dimen>
-    <dimen name="description_text">18sp</dimen>
+    <dimen name="title_text">22sp</dimen>
+    <dimen name="description_text">16sp</dimen>
+    <dimen name="sub_title_text">16sp</dimen>
+    <dimen name="normal_text">14sp</dimen>
 
 
     <!--Setting dimen fragment_daftar_film-->
-    <dimen name="fragment_listview_film_margin">16dp</dimen>
+    <dimen name="listview_film_margin">16dp</dimen>
+    <dimen name="listview_margin_top">3dp</dimen>
+    <dimen name="listview_margin_bottom">4dp</dimen>
 
 </resources>

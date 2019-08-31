@@ -24,7 +24,7 @@ MainActivity.java => activity_main.xml => MovieParelableAdapter.java => DetailMo
 
 */
 
-    private TypedArray[] dataImgMovie;
+    private TypedArray dataImgMovie;
     private String[] dataTitleMovie;
     private String[] dataOverviewMovie;
     private String[] dataGendreMovie;
