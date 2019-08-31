@@ -84,15 +84,3 @@ public class MovieParcelableAdapter extends BaseAdapter {
 
 
 }
-
-
-
-/*
-    private String img_movie;
-    private String title_movie;
-    private String gendre_movie;
-    private String runtime_movie;
-    private int budget_movie;
-    private int revenue_movie;
-    private String review_movie;
-*/

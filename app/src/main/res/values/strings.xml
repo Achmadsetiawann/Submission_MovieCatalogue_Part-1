@@ -3,6 +3,25 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="img_movie">img_movie</string>
+    <string name="title_movie">title_movie</string>
+    <string name="overview_movie">overview_movie</string>
+    <string name="gendre_movie">gendre_movie</string>
+    <string name="runtime_movie">runtime_movie</string>
+    <string name="budget_movie">budget_movie</string>
+    <string name="revenue_movie">revenue_movie</string>
+    <string name="review_movie">review_movie</string>
+
+<!--
+    img_movie
+    title_movie
+    overview_movie
+    gendre_movie
+    runtime_movie
+    budget_movie
+    revenue_movie
+    review_movie
+-->
 
     <array name="data_img_movie">
         <item>@drawable/poster_a_star</item>
@@ -28,51 +47,51 @@
     </array>
 
     <string-array name="data_title_movie">
-        <item>A Star Is Born (2018)</item>
-        <item>Aquaman (2018)</item>
-        <item>Avengers: Infinity War (2018)</item>
-        <item>Bird Box (2018)</item>
-        <item>Bohemian Rhapsody (2018)</item>
-        <item>Bumblebee (2018)</item>
-        <item>Creed II (2018)</item>
-        <item>Deadpool 2 (2018)</item>
-        <item>How to Train Your Dragon: The Hidden World (2019)</item>
-        <item>Dragon Ball Z: Broly – The Legendary Super Saiyan (1993)</item>
-        <item>Glass (2019)</item>
-        <item>Hunter Killer (2018)</item>
-        <item>Mary Poppins Returns (2018)</item>
-        <item>Mortal Engines (2018)</item>
-        <item>Preman Pensiun (2015)</item>
-        <item>Robin Hood (2018)</item>
-        <item>Spider-Man: Far from Home (2019)</item>
-        <item>The Girl in the Spider's Web (2018)</item>
-        <item>The Mule (2018)</item>
-        <item>Venom (2018)</item>
+        <item>A Star Is Born 2018</item>
+        <item>Aquaman 2018</item>
+        <item>Avengers: Infinity War 2018</item>
+        <item>Bird Box 2018</item>
+        <item>Bohemian Rhapsody 2018</item>
+        <item>Bumblebee 2018</item>
+        <item>Creed II 2018</item>
+        <item>Deadpool 2 2018</item>
+        <item>How to Train Your Dragon: The Hidden World 2019</item>
+        <item>Dragon Ball Z: Broly The Legendary Super Saiyan 1993</item>
+        <item>Glass 2019</item>
+        <item>Hunter Killer 2018</item>
+        <item>Mary Poppins Returns 2018</item>
+        <item>Mortal Engines 2018</item>
+        <item>Preman Pensiun 2015</item>
+        <item>Robin Hood 2018</item>
+        <item>Spider-Man: Far from Home 2019</item>
+        <item>The Girl in the Spiders Web 2018</item>
+        <item>The Mule 2018</item>
+        <item>Venom 2018</item>
     </string-array>
 
     <string-array name="data_overview_movie">
-        <item>Seasoned musician Jackson Maine discovers — and falls in love with — struggling artist Ally. She has just about given up on her dream to make it big as a singer — until Jack coaxes her into the spotlight. But even as Ally's career takes off, the personal side of their relationship is breaking down, as Jack fights an ongoing battle with his own internal demons.</item>
-        <item>Once home to the most advanced civilization on Earth, Atlantis is now an underwater kingdom ruled by the power-hungry King Orm. With a vast army at his disposal, Orm plans to conquer the remaining oceanic people and then the surface world. Standing in his way is Arthur Curry, Orm's half-human, half-Atlantean brother and true heir to the throne.</item>
-        <item>As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.</item>
+        <item>Seasoned musician Jackson Maine discovers and falls in love with struggling artist Ally. She has just about given up on her dream to make it big as a singer until Jack coaxes her into the spotlight. But even as Allys career takes off, the personal side of their relationship is breaking down, as Jack fights an ongoing battle with his own internal demons.</item>
+        <item>Once home to the most advanced civilization on Earth, Atlantis is now an underwater kingdom ruled by the power hungry King Orm. With a vast army at his disposal, Orm plans to conquer the remaining oceanic people and then the surface world. Standing in his way is Arthur Curry, Orms half human, half Atlantean brother and true heir to the throne.</item>
+        <item>As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment the fate of Earth and existence itself has never been more uncertain.</item>
         <item>Five years after an ominous unseen presence drives most of society to suicide, a survivor and her two children make a desperate bid to reach safety.</item>
-        <item>Singer Freddie Mercury, guitarist Brian May, drummer Roger Taylor and bass guitarist John Deacon take the music world by storm when they form the rock 'n' roll band Queen in 1970. Hit songs become instant classics. When Mercury's increasingly wild lifestyle starts to spiral out of control, Queen soon faces its greatest challenge yet – finding a way to keep the band together amid the success and excess.</item>
-        <item>On the run in the year 1987, Bumblebee finds refuge in a junkyard in a small Californian beach town. Charlie, on the cusp of turning 18 and trying to find her place in the world, discovers Bumblebee, battle-scarred and broken. When Charlie revives him, she quickly learns this is no ordinary yellow VW bug.</item>
-        <item>Between personal obligations and training for his next big fight against an opponent with ties to his family's past, Adonis Creed is up against the challenge of his life.</item>
-        <item>Wisecracking mercenary Deadpool battles the evil and powerful Cable and other bad guys to save a boy's life.</item>
-        <item>As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at home and Hiccup’s reign as village chief is tested, both dragon and rider must make impossible decisions to save their kind.</item>
-        <item>The film opens with a Saiyan Space pod flying through space and crash-landing on Earth out of which a wounded Saiyan crawls out: Broly, the Legendary Super Saiyan. The wounded Broly shouts out in frustation and turns into normal form. The place soon freezes, trapping him in it and he falls into a coma.</item>
-        <item>In a series of escalating encounters, former security guard David Dunn uses his supernatural abilities to track Kevin Wendell Crumb, a disturbed man who has twenty-four personalities. Meanwhile, the shadowy presence of Elijah Price emerges as an orchestrator who holds secrets critical to both men.</item>
-        <item>Captain Glass of the USS Arkansas discovers that a coup d'état is taking place in Russia, so he and his crew join an elite group working on the ground to prevent a war.</item>
-        <item>In Depression-era London, a now-grown Jane and Michael Banks, along with Michael's three children, are visited by the enigmatic Mary Poppins following a personal loss. Through her unique magical skills, and with the aid of her friend Jack, she helps the family rediscover the joy and wonder missing in their lives.</item>
-        <item>Many thousands of years in the future, Earth’s cities roam the globe on huge wheels, devouring each other in a struggle for ever diminishing resources. On one of these massive traction cities, the old London, Tom Natsworthy has an unexpected encounter with a mysterious young woman from the wastelands who will change the course of his life forever.</item>
-        <item>Bahar, the leader of a group of thugs who control the region, covering markets, terminals and streets, after the death of his wife declared retirement. The statement just delivered on his right hand, Obet. The reason, before he died, his wife said to be waiting for him in heaven. Bahar bepikir, that if he continues to "go on like this", is not likely to get there.
+        <item>Singer Freddie Mercury, guitarist Brian May, drummer Roger Taylor and bass guitarist John Deacon take the music world by storm when they form the rock n roll band Queen in 1970. Hit songs become instant classics. When Mercurys increasingly wild lifestyle starts to spiral out of control, Queen soon faces its greatest challenge yet finding a way to keep the band together amid the success and excess.</item>
+        <item>On the run in the year 1987, Bumblebee finds refuge in a junkyard in a small Californian beach town. Charlie, on the cusp of turning 18 and trying to find her place in the world, discovers Bumblebee, battle scarred and broken. When Charlie revives him, she quickly learns this is no ordinary yellow VW bug.</item>
+        <item>Between personal obligations and training for his next big fight against an opponent with ties to his familys past, Adonis Creed is up against the challenge of his life.</item>
+        <item>Wisecracking mercenary Deadpool battles the evil and powerful Cable and other bad guys to save a boys life.</item>
+        <item>As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at home and Hiccups reign as village chief is tested, both dragon and rider must make impossible decisions to save their kind.</item>
+        <item>The film opens with a Saiyan Space pod flying through space and crash landing on Earth out of which a wounded Saiyan crawls out: Broly, the Legendary Super Saiyan. The wounded Broly shouts out in frustation and turns into normal form. The place soon freezes, trapping him in it and he falls into a coma.</item>
+        <item>In a series of escalating encounters, former security guard David Dunn uses his supernatural abilities to track Kevin Wendell Crumb, a disturbed man who has twenty four personalities. Meanwhile, the shadowy presence of Elijah Price emerges as an orchestrator who holds secrets critical to both men.</item>
+        <item>Captain Glass of the USS Arkansas discovers that a coup détat is taking place in Russia, so he and his crew join an elite group working on the ground to prevent a war.</item>
+        <item>In Depression era London, a now grown Jane and Michael Banks, along with Michaels three children, are visited by the enigmatic Mary Poppins following a personal loss. Through her unique magical skills, and with the aid of her friend Jack, she helps the family rediscover the joy and wonder missing in their lives.</item>
+        <item>Many thousands of years in the future, Earths cities roam the globe on huge wheels, devouring each other in a struggle for ever diminishing resources. On one of these massive traction cities, the old London, Tom Natsworthy has an unexpected encounter with a mysterious young woman from the wastelands who will change the course of his life forever.</item>
+        <item>Bahar, the leader of a group of thugs who control the region, covering markets, terminals and streets, after the death of his wife declared retirement. The statement just delivered on his right hand, Obet. The reason, before he died, his wife said to be waiting for him in heaven. Bahar bepikir, that if he continues to go on like this, is not likely to get there.
             Bahar decision can not be accepted by Obet. Therefore, his retirement Bahar will cause the destruction of the establishment of their power, making small groups under them will be scattered, stand alone. In business, this would only be detrimental Obet Bahar right hand and do not have a group.
-            Bahar retirement are not "announced" was used by Obet to take power and "quota" for Bahar until then all the action unfold and cause chaos. The leader of a small group; Komar (thugs market), Jamal (thugs terminal) and Herman (street thugs) vied for power. Bahar was then dropped back to tidy state.
-            The story also spiced heartbreaking story of the girl who was almost canceled dipersunting Bahar boyfriend just because he's a thug.</item>
-        <item>A war-hardened Crusader and his Moorish commander mount an audacious revolt against the corrupt English crown.</item>
-        <item>Peter Parker and his friends go on a summer trip to Europe. However, they will hardly be able to rest - Peter will have to agree to help Nick Fury uncover the mystery of creatures that cause natural disasters and destruction throughout the continent.</item>
+            Bahar retirement are not announced was used by Obet to take power and quota for Bahar until then all the action unfold and cause chaos. The leader of a small group  Komar thugs market, Jamal thugs terminal and Herman street thugs vied for power. Bahar was then dropped back to tidy state.
+            The story also spiced heartbreaking story of the girl who was almost canceled dipersunting Bahar boyfriend just because he a thug.</item>
+        <item>A war hardened Crusader and his Moorish commander mount an audacious revolt against the corrupt English crown.</item>
+        <item>Peter Parker and his friends go on a summer trip to Europe. However, they will hardly be able to rest Peter will have to agree to help Nick Fury uncover the mystery of creatures that cause natural disasters and destruction throughout the continent.</item>
         <item>In Stockholm, Sweden, hacker Lisbeth Salander is hired by Frans Balder, a computer engineer, to retrieve a program that he believes it is too dangerous to exist.</item>
-        <item>Earl Stone, a man in his 80s, is broke, alone, and facing foreclosure of his business when he is offered a job that simply requires him to drive. Easy enough, but, unbeknownst to Earl, he’s just signed on as a drug courier for a Mexican cartel. He does so well that his cargo increases exponentially, and Earl hit the radar of hard-charging DEA agent Colin Bates.</item>
+        <item>Earl Stone, a man in his 80s, is broke, alone, and facing foreclosure of his business when he is offered a job that simply requires him to drive. Easy enough, but, unbeknownst to Earl, he just signed on as a drug courier for a Mexican cartel. He does so well that his cargo increases exponentially, and Earl hit the radar of hard charging DEA agent Colin Bates.</item>
         <item>Investigative journalist Eddie Brock attempts a comeback following a scandal, but accidentally becomes the host of Venom, a violent, super powerful alien symbiote. Soon, he must rely on his newfound powers to protect the world from a shadowy organization looking for a symbiote of their own.</item>
     </string-array>
 
@@ -169,26 +188,26 @@
     </string-array>
 
     <string-array name="data_review_movie">
-        <item>Written by Gimly on February 19, 2019, Lady Gaga clearly is (and has been for a very long time) a fantastic singer, and has made massive strides as an actor as well, but I really did not enjoy this. Bradley Cooper has clearly been studying at the Jeff Bridges' School of Being Completely Fucking Incomprehensible for this one. Maybe he was just trying to lend some believebility to the idea that he and Sam Elliot were brothers, I don't know (If that is the case, it failed miserably). Which I mean, whatever, it's his movie, he do that character whichever way he wants, but I don't appreciate it myself. Honestly the only thing in t... read the rest.</item>
-        <item>Written by Per Gunnar Jonsson on January 3, 2019, I just came back home from watching Aquaman on the IMAX theater in Balexert in Geneva and thought that I should write something up while it’s still fresh in my mind. Something that happens all too rarely.</item>
-        <item>Written by jmquint00 on May 22, 2018, Best Movie Ever...</item>
-        <item>Written by Gimly on January 20, 2019, Kind of a The Happening meets A Quiet Place, but better than the latter and way better than the former. Maybe I didn't get eeeeeeverything I wanted out of Bird Box but I'm still on board. I know that I opened this up by saying the movie is very much like two other movies, but what I liked most about is honestly that it's unlike 99.99% of the horror genre, and that little variation was just what I needed today.</item>
-        <item>Written by Richard_a_Kirk on February 2, 2019, Bohemian Rhapsody is not a biography of Freddie Mercury, nor a biopic of Queen. It's a story based on a selection of key events occurring between the formation of the band and their appearance at Live Aid. As a Queen fan I found this film utterly engrossing and enjoyable. </item>
+        <item>Written by Gimly on February 19, 2019, Lady Gaga clearly is and has been for a very long time a fantastic singer, and has made massive strides as an actor as well, but I really did not enjoy this. Bradley Cooper has clearly been studying at the Jeff Bridges School of Being Completely Fucking Incomprehensible for this one. Maybe he was just trying to lend some believebility to the idea that he and Sam Elliot were brothers, I dont know If that is the case, it failed miserably. Which I mean, whatever, its his movie, he do that character whichever way he wants, but I dont appreciate it myself. Honestly the only thing in read the rest.</item>
+        <item>Written by Per Gunnar Jonsson on January 3, 2019, I just came back home from watching Aquaman on the IMAX theater in Balexert in Geneva and thought that I should write something up while its still fresh in my mind. Something that happens all too rarely.</item>
+        <item>Written by jmquint00 on May 22, 2018, Best Movie Ever.</item>
+        <item>Written by Gimly on January 20, 2019, Kind of a The Happening meets A Quiet Place, but better than the latter and way better than the former. Maybe I didnt get eeeeeeverything I wanted out of Bird Box but Im still on board. I know that I opened this up by saying the movie is very much like two other movies, but what I liked most about is honestly that its unlike 99.99% of the horror genre, and that little variation was just what I needed today.</item>
+        <item>Written by Richard_a_Kirk on February 2, 2019, Bohemian Rhapsody is not a biography of Freddie Mercury, nor a biopic of Queen. Its a story based on a selection of key events occurring between the formation of the band and their appearance at Live Aid. As a Queen fan I found this film utterly engrossing and enjoyable. </item>
         <item>Written by TriggerZ on April 12, 2019, Decent, by the numbers, popcorn movie. Better than the other live action Transformers movie, but still not very good. Best parts were the fight scenes, especially on Cybertron. Otherwise, it was average, 5/10.</item>
-        <item>Written by Stephen Campbell on June 29, 2019, Decent enough, but adheres far too rigidly to the Rocky template I have not met one person who didn't like a Rocky movie.</item>
+        <item>Written by Stephen Campbell on June 29, 2019, Decent enough, but adheres far too rigidly to the Rocky template I have not met one person who didnt like a Rocky movie.</item>
         <item>Written by Per Gunnar Jonsson on October 21, 2018, I have to say that I quite enjoyed this movie. Was there a lot of juvenile jokes? Oh yes. Was the characters sometimes over the top and silly? Yes again. </item>
         <item>Written by Del29 on February 5, 2019, i got the pleasure of getting a sneak peek of this movie its pretty great i laughed out loud and really had feelings for the characters in this movie its a good choice for older kids i dont think however its a good idea for younger kids its more dark the villans more frightening then before the movie is good very good though</item>
-        <item>We don't have any reviews for Dragon Ball Z: Broly – The Legendary Super Saiyan.</item>
-        <item>Written by esam.mosbah on February 3, 2019 It's a very good movie</item>
-        <item>Written by thecrustycurmudgeon on January 16, 2019, So much potential, but still a disappointment If you have nothing else to do and need to fill some time, this is an okay respite. But, don't expect anything more than a standard military action movie with cliched dialogue, unreasonable scenarios, and mediocre acting.</item>
+        <item>We dont have any reviews for Dragon Ball Z: Broly The Legendary Super Saiyan.</item>
+        <item>Written by esam.mosbah on February 3, 2019 Its a very good movie</item>
+        <item>Written by thecrustycurmudgeon on January 16, 2019, So much potential, but still a disappointment If you have nothing else to do and need to fill some time, this is an okay respite. But, dont expect anything more than a standard military action movie with cliched dialogue, unreasonable scenarios, and mediocre acting.</item>
         <item>Written by Per Gunnar Jonsson on May 27, 2019, The original Mary Poppins was one of my favorite movies when I was a kid and it kind of still is. Thus I was indeed a bit worried when I sat down to watch this one with the kids yesterday. After all there is really so many ways a incompetent writer could have screwed this one up. Especially one with an agenda.</item>
-        <item>Written by Per Gunnar Jonsson on April 19, 2019, I have to say that I liked this movie a lot. It is kind of fantasy, science fiction (emphasis on fiction here) and steam punk (or perhaps I should say diesel punk) mixed together.</item>
-        <item>We don't have enough data to suggest any movies based on Retired Thug. You can help by rating movies you've seen.</item>
+        <item>Written by Per Gunnar Jonsson on April 19, 2019, I have to say that I liked this movie a lot. It is kind of fantasy, science fiction emphasis on fiction here and steam punk or perhaps I should say diesel punk mixed together.</item>
+        <item>We dont have enough data to suggest any movies based on Retired Thug. You can help by rating movies you have seen.</item>
         <item>Written by Gimly on July 17, 2019, I just feel kinda bad for everyone involved. It was clear that whatever was supposed to happen, was tried at. Very hard. But it did not work.</item>
-        <item>Written by Per Gunnar Jonsson on July 21, 2019, I just came home with the kids from the cinema where we had watched Spider-Man: Far From Home so I thought I would write a few lines while it was still fresh in my mind.</item>
+        <item>Written by Per Gunnar Jonsson on July 21, 2019, I just came home with the kids from the cinema where we had watched Spider Man: Far From Home so I thought I would write a few lines while it was still fresh in my mind.</item>
         <item>Written by thecrustycurmudgeon on January 17, 2019, While I enjoyed this film, it was a bit of a disappointment compared to the others in this series. As noted by other reviews, the film is haunted by an incredibly poor script. On the other hand, the action is pretty good if you can tolerate the long, poorly scripted scenes in between.</item>
         <item>Written by Stephen Campbell on July 12, 2019, Laconic, measured and easy to digest, although it could have done with more substance</item>
-        <item>Written by Per Gunnar Jonsson on February 22, 2019, It’s school holidays here in France which means the kids are at my place which in turn means lot’s of time in front of the screen. Last night it was Venom’s turn to be plopped into my Blu-ray player.</item>
+        <item>Written by Per Gunnar Jonsson on February 22, 2019, Its school holidays here in France which means the kids are at my place which in turn means lots of time in front of the screen. Last night it was Venoms turn to be plopped into my Blu ray player.</item>
     </string-array>
 
 </resources>
