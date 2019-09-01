@@ -13,6 +13,7 @@ import java.util.ArrayList;
 
 public class MovieParcelableAdapter extends BaseAdapter {
 
+    /*Declarasi Contex & Array MovieParcelable*/
     private final Context context;
     private ArrayList<MovieParcelable> movieParcelableArrayList;
 
@@ -40,10 +41,12 @@ public class MovieParcelableAdapter extends BaseAdapter {
         return i;
     }
 
+
+    /* Function View pada layout list_film  */
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         if (view == null) {
-            view = LayoutInflater.from(context).inflate(R.layout.detail_film, viewGroup, false);
+            view = LayoutInflater.from(context).inflate(R.layout.list_film, viewGroup, false);
         }
 
         ViewHolder viewHolder = new ViewHolder(view);
@@ -52,19 +55,24 @@ public class MovieParcelableAdapter extends BaseAdapter {
         return view;
     }
 
+    /* Function Bind Guna untuk tarik data pada viewholder ke R.id  */
     private class ViewHolder {
         private ImageView viewholderImg;
-        private TextView viewholderTitle, viewholderOverview, viewholderGendre, viewholderRuntime, viewholderBudget, viewholderRevenue, viewholderReview;
+        private TextView viewholderTitle, viewholderOverview, viewholderRuntime;
+
+        /*viewholderGendre, viewholderBudget, viewholderRevenue, viewholderReview*/
+
 
         ViewHolder(View view) {
-            viewholderImg = view.findViewById(R.id.img_movie);
-            viewholderTitle = view.findViewById(R.id.title_movie);
-            viewholderOverview = view.findViewById(R.id.overview_movie);
-            viewholderGendre = view.findViewById(R.id.gendre_movie);
-            viewholderRuntime = view.findViewById(R.id.runtime_movie);
-            viewholderBudget = view.findViewById(R.id.budget_movie);
+            viewholderImg = view.findViewById(R.id.list_img);
+            viewholderTitle = view.findViewById(R.id.list_title);
+            viewholderOverview = view.findViewById(R.id.list_description);
+            viewholderRuntime = view.findViewById(R.id.list_runtime);
+
+            /*viewholderGendre = view.findViewById(R.id.gendre_movie);*/
+            /*viewholderBudget = view.findViewById(R.id.budget_movie);
             viewholderRevenue = view.findViewById(R.id.revenue_movie);
-            viewholderReview = view.findViewById(R.id.review_movie);
+            viewholderReview = view.findViewById(R.id.review_movie);*/
         }
 
         void bind(MovieParcelable movieParcelable) {
@@ -72,11 +80,12 @@ public class MovieParcelableAdapter extends BaseAdapter {
             viewholderImg.setImageResource(movieParcelable.getImg_movie());
             viewholderTitle.setText(movieParcelable.getTitle_movie());
             viewholderOverview.setText(movieParcelable.getOverview_movie());
-            viewholderGendre.setText(movieParcelable.getGendre_movie());
             viewholderRuntime.setText(movieParcelable.getRuntime_movie());
+
+            /*viewholderGendre.setText(movieParcelable.getGendre_movie());
             viewholderBudget.setText(movieParcelable.getBudget_movie());
             viewholderRevenue.setText(movieParcelable.getRevenue_movie());
-            viewholderReview.setText(movieParcelable.getReview_movie());
+            viewholderReview.setText(movieParcelable.getReview_movie());*/
 
         }
 
