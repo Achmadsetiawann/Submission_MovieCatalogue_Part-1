@@ -2,6 +2,7 @@ package com.example.submissionmoviecatalogue;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.view.View;
@@ -16,10 +17,8 @@ public class MainActivity extends AppCompatActivity{
 
 /*
 Structure
-
 MovieParcelable.java => MovieParcelableAdapter.java
 activity_main.xml => MainActivity.java, MovieParelableAdapter.java => list_film.xml
-
 */
 
     /* Declarasi String, Array & Adapter */
@@ -29,11 +28,6 @@ activity_main.xml => MainActivity.java, MovieParelableAdapter.java => list_film.
     private String[] dataRuntimeMovie;
     private MovieParcelableAdapter adapter;
     private ArrayList<MovieParcelable> movieParcelableArrayList;
-
-    /*private String[] dataGendreMovie;
-    private String[] dataBudgetMovie;
-    private String[] dataRevenueMovie;
-    private String[] dataReviewMovie;*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,58 +45,46 @@ activity_main.xml => MainActivity.java, MovieParelableAdapter.java => list_film.
         addItem();
 
 
+        /* Function OnItemClick Adapter Move Activity On MainActivity.java to DetailMoview.java */
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(MainActivity.this, movieParcelableArrayList.get(i).getTitle_movie(), Toast.LENGTH_SHORT).show();
+                Intent intentDetailMovie = new Intent(MainActivity.this, DetailMovie.class);
+                startActivity(intentDetailMovie);
             }
         });
     }
 
     /* function prepare untuk mengambil nilai array ada MovieParcelable.class */
-        private void prepare() {
+    private void prepare() {
 
-            dataImgMovie = getResources().obtainTypedArray(R.array.data_img_movie);
-            dataTitleMovie = getResources().getStringArray(R.array.data_title_movie);
-            dataOverviewMovie = getResources().getStringArray(R.array.data_overview_movie);
-            dataRuntimeMovie = getResources().getStringArray(R.array.data_runtime_movie);
+        dataImgMovie = getResources().obtainTypedArray(R.array.data_img_movie);
+        dataTitleMovie = getResources().getStringArray(R.array.data_title_movie);
+        dataOverviewMovie = getResources().getStringArray(R.array.data_overview_movie);
+        dataRuntimeMovie = getResources().getStringArray(R.array.data_runtime_movie);
 
-            /*dataGendreMovie = getResources().getStringArray(R.array.data_gendre_movie);
-            dataBudgetMovie = getResources().getStringArray(R.array.data_budget_movie);
-            dataRevenueMovie = getResources().getStringArray(R.array.data_revenue_movie);
-            dataReviewMovie = getResources().getStringArray(R.array.data_review_movie);*/
-
-        }
+    }
 
 
     /* function addItem untuk menampilkan hasil dari MovieParcelable.class */
-        private void addItem() {
-            movieParcelableArrayList = new ArrayList<>();
+    private void addItem() {
+        movieParcelableArrayList = new ArrayList<>();
 
-            for (int i = 0; i < dataTitleMovie.length; i++) {
-                MovieParcelable movieParcelable = new MovieParcelable();
+        for (int i = 0; i < dataTitleMovie.length; i++) {
+            MovieParcelable movieParcelable = new MovieParcelable();
 
-                movieParcelable.setImg_movie(dataImgMovie.getResourceId(i, -1));
-                movieParcelable.setTitle_movie(dataTitleMovie[i]);
-                movieParcelable.setOverview_movie(dataOverviewMovie[i]);
-                movieParcelable.setRuntime_movie(dataRuntimeMovie[i]);
+            movieParcelable.setImg_movie(dataImgMovie.getResourceId(i, -1));
+            movieParcelable.setTitle_movie(dataTitleMovie[i]);
+            movieParcelable.setOverview_movie(dataOverviewMovie[i]);
+            movieParcelable.setRuntime_movie(dataRuntimeMovie[i]);
 
-                movieParcelableArrayList.add(movieParcelable);
-
-                /*movieParcelable.setGendre_movie(dataGendreMovie[i]);
-                movieParcelable.setBudget_movie(dataBudgetMovie[i]);
-                movieParcelable.setRevenue_movie(dataRevenueMovie[i]);
-                movieParcelable.setReview_movie(dataReviewMovie[i]);*/
-
-            }
-
-            adapter.setMovieParcelableArrayList(movieParcelableArrayList);
+            movieParcelableArrayList.add(movieParcelable);
 
         }
 
+        adapter.setMovieParcelableArrayList(movieParcelableArrayList);
+
+    }
 
 
 }
-
-
-

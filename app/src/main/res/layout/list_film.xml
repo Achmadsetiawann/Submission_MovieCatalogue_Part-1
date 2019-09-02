@@ -13,7 +13,7 @@
             android:adjustViewBounds="true"
             android:scaleType="fitXY"
             android:src="@drawable/poster_spiderman"
-            android:layout_marginTop="7dp"
+            android:layout_marginTop="3dp"
             />
 
         <TextView
@@ -41,10 +41,21 @@
             />
 
         <TextView
+            android:id="@+id/list_runtimetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/listview_margin_top"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:text="Run Time"
+            android:textSize="@dimen/sub_title_text"
+            android:textColor="@android:color/white"
+            />
+
+        <TextView
             android:id="@+id/list_runtime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:layout_gravity="bottom"
             android:gravity="center_vertical"
             android:text="list_runtime"
