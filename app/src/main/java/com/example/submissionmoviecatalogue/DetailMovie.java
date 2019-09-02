@@ -23,7 +23,7 @@ public class DetailMovie extends AppCompatActivity{
         listMovieDetail = findViewById(R.id.detail_film);
         listMovieDetail.setHasFixedSize(true);
 
-        list.addAll(MovieParcelableAdapter.getLis());
+        list.addAll(MovieParcelable.getListData());
         showRecyclerList();
 
     }

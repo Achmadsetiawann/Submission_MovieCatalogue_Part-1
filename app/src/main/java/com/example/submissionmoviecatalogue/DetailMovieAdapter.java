@@ -37,7 +37,7 @@ public class DetailMovieAdapter extends RecyclerView.Adapter<DetailMovieAdapter.
                 .apply(new RequestOptions().override(55, 55))
                 .into(holder.dataImgMovieDetail);
 
-        holder.dataTitleMovieDetail.setText(MovieParcelableAdapter.getTitle_movie());
+        holder.dataTitleMovieDetail.setText(movieParcelable.getTitle_movie());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
