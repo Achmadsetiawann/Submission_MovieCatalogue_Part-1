@@ -1,41 +1,31 @@
 package com.example.submissionmoviecatalogue;
 
 import android.os.Bundle;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
+public class DetailMovie extends AppCompatActivity {
 
+    /* Inisiasi String pada class MoveWithObjectActivity */
+    public static final String EXTRA_MovieParcelable = "MovieParcelable";
+    TextView tvObject;
+    ImageView ivObject;
 
-public class DetailMovie extends AppCompatActivity{
-
-    private RecyclerView listMovieDetail;
-    private ArrayList<MovieParcelable> list = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.detail_film);
 
+        tvObject = findViewById(R.id.title_movie);
+        ivObject = findViewById(R.id.img_movie);
 
-        listMovieDetail = findViewById(R.id.detail_film);
-        listMovieDetail.setHasFixedSize(true);
-
-        list.addAll(MovieParcelable.getListData());
-        showRecyclerList();
-
+        MovieParcelable movieParcelable = getIntent().getParcelableExtra(EXTRA_MovieParcelable);
+        String text = movieParcelable.getTitle_movie();
+        Integer img = movieParcelable.getImg_movie();
+        tvObject.setText(text);
+        ivObject.setImageResource(img);
     }
-
-
-    private void showRecyclerList(){
-        listMovieDetail.setLayoutManager(new LinearLayoutManager(this));
-        DetailMovieAdapter listMovieAdapter = new DetailMovieAdapter(list);
-        listMovieDetail.setAdapter(listMovieAdapter);
-    }
-
-
-
 }
-
