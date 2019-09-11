@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/img_movie"
         android:layout_width="190dp"
-        android:layout_height="305dp"
+        android:layout_height="200dp"
         android:scaleType="fitXY"
         android:layout_marginTop="7dp"
         />
@@ -43,7 +43,7 @@
         />
 
     <TextView
-        android:id="@+id/gendre_movie"
+        android:id="@+id/runtime_movie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/listview_film_margin"
@@ -51,63 +51,7 @@
         android:layout_below="@id/overview_movie"
         android:layout_marginTop="@dimen/listview_margin_top"
         android:layout_marginBottom="@dimen/listview_margin_bottom"
-        android:text="@string/gendre_movie"
-        android:textSize="@dimen/normal_text"
-        android:maxLines="3"
-        />
-
-    <TextView
-        android:id="@+id/runtime_movie"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/listview_film_margin"
-        android:layout_toEndOf="@+id/img_movie"
-        android:layout_below="@id/gendre_movie"
-        android:layout_marginTop="@dimen/listview_margin_top"
-        android:layout_marginBottom="@dimen/listview_margin_bottom"
         android:text="@string/runtime_movie"
-        android:textSize="@dimen/normal_text"
-        android:maxLines="3"
-        />
-
-    <TextView
-        android:id="@+id/budget_movie"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/listview_film_margin"
-        android:layout_toEndOf="@+id/img_movie"
-        android:layout_below="@id/runtime_movie"
-        android:layout_marginTop="@dimen/listview_margin_top"
-        android:layout_marginBottom="@dimen/listview_margin_bottom"
-        android:text="@string/budget_movie"
-        android:textSize="@dimen/normal_text"
-        android:maxLines="3"
-        />
-
-    <TextView
-        android:id="@+id/revenue_movie"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/listview_film_margin"
-        android:layout_toEndOf="@+id/img_movie"
-        android:layout_below="@id/budget_movie"
-        android:layout_marginTop="@dimen/listview_margin_top"
-        android:layout_marginBottom="@dimen/listview_margin_bottom"
-        android:text="@string/revenue_movie"
-        android:textSize="@dimen/normal_text"
-        android:maxLines="3"
-        />
-
-    <TextView
-        android:id="@+id/review_movie"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/listview_film_margin"
-        android:layout_toEndOf="@+id/img_movie"
-        android:layout_below="@id/revenue_movie"
-        android:layout_marginTop="@dimen/listview_margin_top"
-        android:layout_marginBottom="@dimen/listview_margin_bottom"
-        android:text="@string/review_movie"
         android:textSize="@dimen/normal_text"
         android:maxLines="3"
         />

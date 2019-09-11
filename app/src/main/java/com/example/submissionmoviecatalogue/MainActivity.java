@@ -1,6 +1,7 @@
 package com.example.submissionmoviecatalogue;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.content.res.TypedArray;
@@ -8,7 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
+
 
 import java.util.ArrayList;
 
@@ -19,15 +20,21 @@ public class MainActivity extends AppCompatActivity{
 Structure
 MovieParcelable.java => MovieParcelableAdapter.java
 activity_main.xml => MainActivity.java, MovieParelableAdapter.java => list_film.xml
+detail_film.xml => DetailMovie.java
 */
 
     /* Declarasi String, Array & Adapter */
+
     private TypedArray dataImgMovie;
     private String[] dataTitleMovie;
     private String[] dataOverviewMovie;
     private String[] dataRuntimeMovie;
-    private MovieParcelableAdapter adapter;
+
     private ArrayList<MovieParcelable> movieParcelableArrayList;
+
+    private RecyclerView MovieRecyclerView;
+    private MovieParcelableAdapter adapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +57,7 @@ activity_main.xml => MainActivity.java, MovieParelableAdapter.java => list_film.
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intentDetailMovie = new Intent(MainActivity.this, DetailMovie.class);
+                intentDetailMovie.putExtra(DetailMovie.EXTRA_MovieParcelable, movieParcelableArrayList.get(i));
                 startActivity(intentDetailMovie);
             }
         });

@@ -3,6 +3,7 @@ package com.example.submissionmoviecatalogue;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+
 public class MovieParcelable implements Parcelable {
 
     /* Deklarasi Data yg di butuhkan */
@@ -85,7 +86,7 @@ public class MovieParcelable implements Parcelable {
         this.review_movie = review_movie;
     }
 
-    /* Fungsi Android Parceable Data */
+    /* Fungsi Android Parcelable Data */
 
     @Override
     public int describeContents() {

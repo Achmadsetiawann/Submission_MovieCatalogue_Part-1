@@ -3,15 +3,14 @@ package com.example.submissionmoviecatalogue;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class DetailMovie extends AppCompatActivity {
 
-    /* Inisiasi String pada class MoveWithObjectActivity */
+    /* Inisiasi Object pada TextView & Image pada class MoveWithObjectActivity */
     public static final String EXTRA_MovieParcelable = "MovieParcelable";
-    TextView tvObject;
-    ImageView ivObject;
+    TextView tvTitle, tvOverview, tvRuntime ;
+    ImageView ivImgMovie ;
 
 
     @Override
@@ -19,13 +18,24 @@ public class DetailMovie extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.detail_film);
 
-        tvObject = findViewById(R.id.title_movie);
-        ivObject = findViewById(R.id.img_movie);
+        /* Deklarasi Object pada TextView & Image pada class MovieParcelableAdapter */
+        ivImgMovie = findViewById(R.id.img_movie);
+        tvTitle = findViewById(R.id.title_movie);
+        tvOverview = findViewById(R.id.overview_movie);
+        tvRuntime = findViewById(R.id.runtime_movie);
 
+        /* Grab data TextView & Image pada class MovieParcelableAdapter */
         MovieParcelable movieParcelable = getIntent().getParcelableExtra(EXTRA_MovieParcelable);
-        String text = movieParcelable.getTitle_movie();
-        Integer img = movieParcelable.getImg_movie();
-        tvObject.setText(text);
-        ivObject.setImageResource(img);
+        Integer img_movie = movieParcelable.getImg_movie();
+        String title_movie = movieParcelable.getTitle_movie();
+        String overview_movie = movieParcelable.getOverview_movie();
+        String runtime_movie = movieParcelable.getRuntime_movie();
+
+
+        ivImgMovie.setImageResource(img_movie);
+        tvTitle.setText(title_movie);
+        tvOverview.setText(overview_movie);
+        tvRuntime.setText(runtime_movie);
+
     }
 }
