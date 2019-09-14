@@ -1,7 +1,5 @@
 package com.example.submissionmoviecatalogue;
-
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.content.res.TypedArray;
@@ -32,7 +30,6 @@ detail_film.xml => DetailMovie.java
 
     private ArrayList<MovieParcelable> movieParcelableArrayList;
 
-    private RecyclerView MovieRecyclerView;
     private MovieParcelableAdapter adapter;
 
 

@@ -26,7 +26,13 @@ public class DetailMovie extends AppCompatActivity {
 
         /* Grab data TextView & Image pada class MovieParcelableAdapter */
         MovieParcelable movieParcelable = getIntent().getParcelableExtra(EXTRA_MovieParcelable);
-        Integer img_movie = movieParcelable.getImg_movie();
+
+        /* fungsi nilai yang menghasil kan data null NullPointerException */
+        int img_movie = 0;
+        if (movieParcelable != null) {
+            img_movie = movieParcelable.getImg_movie();
+        }
+
         String title_movie = movieParcelable.getTitle_movie();
         String overview_movie = movieParcelable.getOverview_movie();
         String runtime_movie = movieParcelable.getRuntime_movie();

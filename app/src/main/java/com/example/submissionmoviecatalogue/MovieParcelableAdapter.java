@@ -57,7 +57,7 @@ public class MovieParcelableAdapter extends BaseAdapter {
 
     /* Function Bind Guna untuk narik data pada viewholder ke R.id  */
     private class ViewHolder {
-        private ImageView viewholderImg;
+        final ImageView viewholderImg;
         private TextView viewholderTitle, viewholderOverview, viewholderRuntime;
 
 
